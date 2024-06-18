@@ -3,7 +3,7 @@
 //// CLASES y HERENCIA
 ////////////////////////////
 
-id Equip {
+class Equip {
     constructor(nombre, apellido, salario){
         this.nombre = nombre;
         this.apellido = apellido;
@@ -15,7 +15,7 @@ id Equip {
     }
 }
 
-id Jugador extends Equip {
+class Jugador extends Equip {
     constructor(nombre, apellido, salario, edad, posicion, dorsal) {
         super(nombre, apellido, salario);
             this.edad = edad;
@@ -24,7 +24,7 @@ id Jugador extends Equip {
     }
 }
 
-id Entrenador extends Equip {
+class Entrenador extends Equip {
     constructor(nombre, apellido, salario, caracter, cargo){
         super(nombre, apellido, salario);
             this.caracter = caracter;
